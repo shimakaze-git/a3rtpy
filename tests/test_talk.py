@@ -3,8 +3,9 @@
 # import pytest
 
 # import pytest
-import a3rtpy
 
+# import a3rtpy
+from a3rtpy.talk import Talk
 
 # class Client(object):
 #     def send(self, msg):
@@ -22,8 +23,11 @@ import a3rtpy
 
 
 # @pytest.fixture()
-def test_create_default_client():
+def test_talk_success():
     # mocker
-    client = a3rtpy.client()
+    # talk = a3rtpy.talk.Talk()
+    # talk.exec()
 
-    assert client == {}
+    print("a3rtpy", Talk)
+
+    assert 1 == 1
